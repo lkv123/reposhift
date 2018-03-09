@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import request
+from tkinter import messagebox
 
 #WA[
 from whatsapp import Client
@@ -12,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-
+messagebox.showerror("Error", "error message")
     return 'Hello World!'
 
 @app.route('/msg', methods = ['POST'])
