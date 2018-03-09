@@ -13,8 +13,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-messagebox.showerror("Error", "error message")
-    return 'Hello World!'
+    messagebox.showerror("Error", "error message")
+        return 'Hello World!'
 
 @app.route('/msg', methods = ['POST'])
 def msg():
