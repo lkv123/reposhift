@@ -19,7 +19,7 @@ def msg():
     to = request.form['to']
     return str(to)
 
-@app.route('/sendmsg')
+@app.route('/sendmsg', methods =['GET'])
 def sendmsg():
     to = 919787125779
     msg = 'hello from salesforce'
