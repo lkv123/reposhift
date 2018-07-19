@@ -29,13 +29,13 @@ def sendmsg():
     token = 'sb'#request.args.get('token')
     if(str(token) != 'a'):
         client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
-        res = client.send_message(9787125779, 'test')
+        res = client.send_message('919787125779', 'test')
         
     
     else:
         res = 'Unauthorized'
     
-    return res
+    return str(res)
     
 
 if __name__ == '__main__':
