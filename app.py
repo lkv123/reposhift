@@ -25,12 +25,11 @@ def msg():
 @app.route('/sendmsg')
 def sendmsg():
     to = request.args.get('to')
-    print request.args.get['to']
     msg = request.args.get('msg')
     token = request.args.get('token')
     if(str(token) != 'a'):
         client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
-        res = 1#client.send_message(to, msg)
+        res = client.send_message(919787125779, 'test')
         
     
     else:
@@ -41,4 +40,4 @@ def sendmsg():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
-    app.run(debug=True)
+   
