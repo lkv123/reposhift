@@ -29,7 +29,7 @@ def sendmsg():
     token = 'sb'#request.args.get('token')
     if(str(token) != 'a'):
         client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
-        res = client.send_message(919787125779, 'test')
+        res = client.send_message('919787125779', 'test')
         
     
     else:
