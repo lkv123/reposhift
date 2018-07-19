@@ -27,7 +27,7 @@ def sendmsg():
     if(str(token) == expected_token):
         client = Client(login='919494850241', password='wedn6jcBJIWl9a7IpXME1iKAEm0=')
         res = client.send_message(to, msg)
-        print res
+        
     
     else:
         res = 'Unauthorized'
