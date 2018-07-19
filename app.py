@@ -35,7 +35,7 @@ def sendmsg():
     else:
         res = 'Unauthorized'
     
-    return str(client)
+    return str(res)
     
 
 if __name__ == '__main__':
