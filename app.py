@@ -2,6 +2,7 @@ from flask import Flask
 from flask import request
 from yowsup.layers.axolotl import AxolotlSendLayer, AxolotlControlLayer, AxolotlReceivelayer
 from yowsup.layers.axolotl import AxolotlReceivelayer as AxolotlReceiveLayer
+import logging
 #WA[
 from whatsapp import Client
 expected_token = 'pavan123'
@@ -23,6 +24,7 @@ def msg():
 @app.route('/sendmsg')
 def sendmsg():
     to = request.args.get('to')
+    logging.debug('***'%to)
     msg = request.args.get('msg')
     token = request.args.get('token')
     if(str(token) != 'a'):
