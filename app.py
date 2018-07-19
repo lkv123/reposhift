@@ -25,7 +25,7 @@ def msg():
 @app.route('/sendmsg')
 def sendmsg():
     to = request.args.get('to')
-    print request.args['S']
+    print request.args.get['to']
     msg = request.args.get('msg')
     token = request.args.get('token')
     if(str(token) != 'a'):
