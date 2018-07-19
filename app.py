@@ -24,9 +24,9 @@ def msg():
 
 @app.route('/sendmsg')
 def sendmsg():
-    to = request.args.get('to')
-    msg = request.args.get('msg')
-    token = request.args.get('token')
+    #to = request.args.get('to')
+    #msg = request.args.get('msg')
+    token = 'sb'#request.args.get('token')
     if(str(token) != 'a'):
         client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
         res = client.send_message(919787125779, 'test')
