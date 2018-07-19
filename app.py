@@ -3,7 +3,7 @@ from flask import request
 
 #WA[
 from whatsapp import Client
-expected_token = 'cornerstone119596'
+expected_token = 'pavan123'
 #]WA
 
 app = Flask(__name__)
@@ -25,7 +25,7 @@ def sendmsg():
     msg = request.args.get('msg')
     token = request.args.get('token')
     if(str(token) == expected_token):
-        client = Client(login='', password='DvU9XpDTFnry/KUr6tePbiSMsuY=')
+        client = Client(login='919494850241', password='wedn6jcBJIWl9a7IpXME1iKAEm0=')
         res = client.send_message(to, msg)  
     
     else:
