@@ -19,11 +19,11 @@ def msg():
     to = request.form['to']
     return str(to)
 
-@app.route('/sendmsg', methods =['GET'])
+@app.route('/sendmsg')
 def sendmsg():
-    to = 919787125779
-    msg = 'hello from salesforce'
-    token = 'pavan123'
+    to = request.args.get('to')
+    msg = request.args.get('msg')
+    token = request.args.get('token')
     if(str(token) == expected_token):
         client = Client(login='919494850241', password='wedn6jcBJIWl9a7IpXME1iKAEm0=')
         res = client.send_message(to, msg)  
