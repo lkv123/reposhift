@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 from yowsup.layers.axolotl import AxolotlSendLayer, AxolotlControlLayer, AxolotlReceivelayer
+from yowsup.layers.axolotl import AxolotlReceivelayer as AxolotlReceiveLayer
 #WA[
 from whatsapp import Client
 expected_token = 'pavan123'
